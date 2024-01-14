@@ -1,0 +1,35 @@
+.main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main>div{
+  height: 30%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(202, 61, 61);
+  padding: 3rem;
+  border: 2px solid transparent;
+   border-radius: 10px;
+}
+.count{
+  font-size: 2rem;
+  color: white;
+}
+button{
+   background-color: white;
+   padding: 7px;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   color: black;
+   margin-left: 2rem;
+   cursor: pointer;
+}
+button:active{
+  background-color: rgb(173, 167, 167);  
+}

@@ -1,0 +1,22 @@
+.main{ 
+ height: 100%;
+}
+.images{
+  padding: 0 3.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.images img{
+  height: 15rem;
+}
+.btn{
+   padding: 5rem;
+   text-align: center;
+}
+.btn button{
+   margin-left: 20px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   background-color: rgb(159, 88, 225);
+}

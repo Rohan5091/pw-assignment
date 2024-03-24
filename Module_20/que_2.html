@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que2</title>
+  <style>
+      div{
+         width: 50%;
+         height: 50%;
+         background-color: white;
+         color: black;
+         border: 2px solid black;
+         padding: 20px;
+      }
+
+  </style>
+</head>
+<body>
+    <div>
+
+      <h1>This is <span id="mode">light</span> mode</h1>
+      <button onclick="toggle()">Toggle Theme</button>
+    </div>
+   <script>
+       const mode=document.getElementById("mode")
+       const div=document.querySelector("div")
+       let theme="light"
+       function toggle() {
+         if (theme=="light") {
+           mode.innerHTML="dark"
+           div.style.backgroundColor="black"
+           div.style.color="white"
+           theme="dark"
+         } else {
+           mode.innerHTML="Light"
+           div.style.backgroundColor="white"
+           div.style.color="black"
+           theme="light"
+         }
+       }
+   </script>
+</body>
+</html>

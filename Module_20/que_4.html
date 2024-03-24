@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que4</title>
+  <style>
+    .main{
+         width: 50%;
+         height: 50%;
+         background-color: white;
+         color: black;
+         border: 4px solid black;
+         padding: 20px;
+      }
+      button{
+         width: max-content;
+         padding: 0rem 1rem;
+      }
+      .form{
+          display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          gap: 2rem;
+      }
+  </style>
+</head>
+<body>
+    <div class="main">
+      <form class="form" onsubmit="submitform(event)" >
+        <h1>Sign Up Form</h1>
+        <div><label for="name">Name :</label><input id="text"  placeholder="(Minimum 3 charactors)" type="text"></div>
+        <div><label for="email">Email :</label><input id="email" placeholder="Enter email" type="email"></div>
+        <div><label for="password">Password :</label><input  id="password" placeholder="(Minimum 8 charactors)" type="password"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+   <script>
+    function submitform(event) {
+       
+      if (text.value.length<3) {
+        alert("Form validation failed")
+      }
+      else if (password.value.length<8) {
+        alert("Form validation failed")
+      }
+      event.preventDefault();
+    }
+   </script>
+</body>
+</html>

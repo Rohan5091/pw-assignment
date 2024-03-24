@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que3</title>
+  <style>
+    div{
+         width: 50%;
+         height: 50%;
+         background-color: white;
+         color: black;
+         border: 4px solid black;
+         padding: 20px;
+      }
+      button{
+         padding: 1rem;
+      }
+  </style>
+</head>
+<body>
+    <div>
+        <h1>Counter</h1>
+        <div>
+          <button onclick="decreament()" id="dec">-</button>
+          <span id="num">0</span>
+          <button onclick="increament()" id="inc">+</button>
+        </div>
+    </div>
+
+
+    <script>
+        let value=0;
+        
+        function decreament() {
+           if (value===0) {
+             alert("Counter is going beyond 0.")
+           }
+           value--
+          num.innerText=value
+        }
+        function increament() {
+          value++
+         num.innerText=value
+        }
+    </script>
+</body>
+</html>
